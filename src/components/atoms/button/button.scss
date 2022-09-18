@@ -1,0 +1,25 @@
+@use "../../variables" as *;
+
+.button{
+    color : $white;
+    background-color : $black;
+    transition :all 0.2s ;
+    
+    &:hover{
+        color : $white;
+        background-color : $orange_bistre;
+        text-decoration-line: none;
+    
+    }
+   
+    @media(min-width : $breakpoint-sm){
+        padding : 17.5px 49px;
+    }
+    @media(min-width : $breakpoint-sm)and(max-width : $breakpoint-md){
+        padding : 12.5px 60px;
+    }
+    @media (min-width : $breakpoint-lg){
+        padding : 17.5px 74px;
+    }
+
+}
