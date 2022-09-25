@@ -1,16 +1,15 @@
 @use "../../variables" as *;
 
-.button{
-    display : inline-block;
+a{
     color : $white;
     background-color : $black;
     transition :all 0.2s ;
     width : 200px;
     height : 55px;
     text-align : center;
-    display : table-cell;
     vertical-align : middle;
-    
+    display : table-cell;
+
 
     &:hover{
         color : $white;
