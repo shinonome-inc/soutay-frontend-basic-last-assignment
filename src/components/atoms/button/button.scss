@@ -4,7 +4,8 @@
     color : $white;
     background-color : $black;
     transition :all 0.2s ;
-    padding : 17.5px 74px;
+    width : 200px;
+    height : 55px;
     
     &:hover{
         color : $white;
@@ -13,9 +14,11 @@
     }
 
     @media(max-width : $breakpoint-lg){
-        padding : 12.5px 64px;
+        width : 180px;
+        height : 45px;
     }
     @media(max-width : $breakpoint-md){
-        padding : 17.5px 49px;
+        width : 150px;
+        height : 55px;
     }
 }    
