@@ -1,0 +1,37 @@
+@use "../../variables" as *;
+
+div {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  color: $black;
+  font-family: $fontfamily-mincho;
+  width: 287px;
+  height: 54px;
+  font-size: 36px;
+  padding-bottom: 10px;
+
+  @media (max-width: $breakpoint-lg) {
+    width: 160px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 6px;
+  }
+}
+
+p {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  color: $black;
+  font-family: $fontfamily-mincho;
+  width: 84px;
+  height: 36px;
+  font-size: 14px;
+  @media (max-width: $breakpoint-lg) {
+    width: 84px;
+    height: 28px;
+    font-size: 14px;
+  }
+}
