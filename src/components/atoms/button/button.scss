@@ -3,7 +3,7 @@
 a {
   color: $white;
   background-color: $black;
-  transition: all 0.2s;
+  transition: all 0.2s ease 0s;
   width: 200px;
   height: 55px;
   text-align: center;
@@ -15,10 +15,7 @@ a {
     background-color: $orange_bistre;
     text-decoration-line: none;
   }
-  @media (max-width: $breakpoint-md) {
-    width: 150px;
-    height: 55px;
-  }
+  
   @media (max-width: $breakpoint-sm) {
     width: 180px;
     height: 45px;
