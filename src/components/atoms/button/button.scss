@@ -16,8 +16,11 @@ a {
     text-decoration-line: none;
   }
   
-  @media (max-width: $breakpoint-sm) {
+  @media (max-width: $breakpoint-md) {
     width: 180px;
     height: 45px;
+  }
+  @media (max-width: $breakpoint-lg){
+    width:150px;
   }
 }
