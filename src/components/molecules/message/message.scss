@@ -1,13 +1,9 @@
 @use "../../variables" as *;
 
-div {
-  width: 327px;
-  height: 204px;
+.message {
   padding: 52px 20px;
 
   @media (max-width: $breakpoint-lg) {
-    width: 200px;
-    height: 128px;
     padding: 32px 20px;
   }
 
@@ -27,11 +23,6 @@ div {
   .setumei {
     align-items: center;
     text-align: center;
-    font-family: $fontfamily-gothic;
     font-size: $fontsize-s;
-
-    @media (max-width: $breakpoint-lg) {
-      font-size: $fontsize-s;
-    }
   }
 }
