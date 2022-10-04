@@ -1,0 +1,52 @@
+@use "../../variables" as *;
+
+.text {
+  color: $white;
+  padding: 20px 40px 20px 40px;
+  background-color: $orange_zorba;
+  text-align: center;
+  border: solid;
+  border-color: $gray_desertStorm;
+}
+.body {
+  background-color: $gray_desertStorm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 142px;
+  border: solid;
+  border-color: $gray_desertStorm;
+  .price {
+    color: $orange_bistre;
+  }
+  .memo {
+    color: $black;
+    font-weight: normal;
+  }
+}
+.list {
+  justify-content: center;
+  align-items: center;
+  text-decoration-color: $gray_desertStorm;
+  text-align: center;
+  .start {
+    border: solid;
+    border-color: $gray_desertStorm;
+    height: 60px;
+  }
+  .normal {
+    border: solid;
+    border-color: $gray_desertStorm;
+    height: 60px;
+  }
+  .weekend {
+    border: solid;
+    border-color: $gray_desertStorm;
+    height: 60px;
+  }
+  .core {
+    border: solid;
+    border-color: $gray_desertStorm;
+    height: 60px;
+  }
+}
