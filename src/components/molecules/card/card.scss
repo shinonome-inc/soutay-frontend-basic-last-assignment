@@ -2,13 +2,15 @@
 
 .card {
   object-fit: contain;
-  overflow: hidden;
-  img {
-    position: relative;
-    @media (min-width: $breakpoint-md) {
-      &:hover {
-        transition: 0.5s ease;
-        transform: scale(1.2);
+  .on {
+    overflow: hidden;
+    img {
+      position: relative;
+      @media (min-width: $breakpoint-md) {
+        &:hover {
+          transition: 0.5s ease;
+          transform: scale(1.2);
+        }
       }
     }
   }
