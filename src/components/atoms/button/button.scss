@@ -6,9 +6,9 @@
   transition: 0.2s ease;
   width: 200px;
   height: 55px;
-  text-align: center;
-  vertical-align: middle;
-  display: table-cell;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 
   &:hover {
     color: $white;
