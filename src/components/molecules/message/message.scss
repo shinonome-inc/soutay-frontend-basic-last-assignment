@@ -12,11 +12,9 @@
     text-align: center;
     font-family: $fontfamily-mincho;
     font-size: $fontsize-xl;
-    margin-bottom: 10px;
 
     @media (max-width: $breakpoint-lg) {
       font-size: $fontsize-l;
-      margin-bottom: 6px;
     }
   }
 
