@@ -5,7 +5,7 @@
   padding: 20px 40px 20px 40px;
   background-color: $orange_zorba;
   text-align: center;
-  border: solid;
+  border: 1px solid;
   border-color: $gray_desertStorm;
 }
 .body {
@@ -16,12 +16,18 @@
   height: 142px;
   border: solid;
   border-color: $gray_desertStorm;
+  .yen {
+    font-size: $fontsize-xs;
+  }
   .price {
     color: $orange_bistre;
-  }
-  .memo {
-    color: $black;
-    font-weight: normal;
+
+    .memo {
+      color: $black;
+      font-weight: normal;
+      font-size: $fontsize-s;
+      align-items: center;
+    }
   }
 }
 .list {
