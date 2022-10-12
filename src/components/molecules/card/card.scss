@@ -4,7 +4,6 @@
   object-fit: contain;
   .on {
     overflow: hidden;
-    padding: 32px;
     img {
       position: relative;
       width: 100%;
@@ -24,16 +23,24 @@
     border-width: 150px 150px 0 0;
     border-color: $white transparent transparent transparent;
   }
+  .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $orange_bistre;
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-l;
+  }
   .below {
     background-color: $white_smoke;
     padding: 32px;
-    .title {
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: $orange_bistre;
-      font-family: $fontfamily-gothic;
-      font-size: 20px;
+    .text{
+      margin-bottom:30px;
+    }
+    
+    .button{
+      display:flex;
+      justify-content:center;
     }
   }
 }
