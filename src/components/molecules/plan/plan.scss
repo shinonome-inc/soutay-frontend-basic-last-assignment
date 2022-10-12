@@ -1,32 +1,39 @@
 @use "../../variables" as *;
 
+.plan{
+  width:540px;
+  @media(max-width:$breakpoint-md){
+    width:220px;
+  }
 .text {
   color: $white;
-  padding: 20px 40px 20px 40px;
+  padding: 20px 40px;
   background-color: $orange_zorba;
   text-align: center;
   border: 1px solid;
   border-color: $gray_desertStorm;
+  font-size:$fontsize-l;
 }
 .body {
   background-color: $gray_desertStorm;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 142px;
+  padding:24px;
   border: solid;
   border-color: $gray_desertStorm;
   .yen {
-    font-size: $fontsize-xs;
+    font-size: $fontsize-l;
   }
   .price {
     color: $orange_bistre;
-
+    font-size:$fontsize-xxl;
     .memo {
+      display:flex;
       color: $black;
       font-weight: normal;
       font-size: $fontsize-s;
-      align-items: center;
+      justify-content:center;
     }
   }
 }
@@ -36,23 +43,28 @@
   text-decoration-color: $gray_desertStorm;
   text-align: center;
   .start {
-    border: solid;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid $gray_desertStorm;
     border-color: $gray_desertStorm;
-    height: 60px;
+    padding:20px;
+    margin-bottom: -2px;
+    font-size:$fontsize-s;
   }
-  .normal {
-    border: solid;
-    border-color: $gray_desertStorm;
-    height: 60px;
-  }
-  .weekend {
-    border: solid;
-    border-color: $gray_desertStorm;
-    height: 60px;
-  }
-  .core {
-    border: solid;
-    border-color: $gray_desertStorm;
-    height: 60px;
-  }
+
+}
+.plan-b{
+  border: 1px solid $orange_bistre;
+}
+.text-b {
+  color: $white;
+  padding: 20px 40px;
+  background-color: $orange_bistre;
+  text-align: center;
+  border: 1px solid;
+  border-color: $gray_desertStorm;
+  font-size:$fontsize-l;
+}
+
 }
