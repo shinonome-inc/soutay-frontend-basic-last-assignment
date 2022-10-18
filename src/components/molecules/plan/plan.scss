@@ -1,18 +1,19 @@
 @use "../../variables" as *;
 
 .plan{
-  width:540px;
-  @media(max-width:$breakpoint-md){
-    width:220px;
-  }
 .text {
   color: $white;
   padding: 20px 40px;
-  background-color: $orange_zorba;
   text-align: center;
   border: 1px solid;
   border-color: $gray_desertStorm;
   font-size:$fontsize-l;
+  :nth-child(odd){
+    background-color: $orange_zorba;
+  }
+  :nth-child(even){
+    background-color: $orange_bistre;
+  }
 }
 .body {
   background-color: $gray_desertStorm;
@@ -22,6 +23,7 @@
   padding:24px;
   border: solid;
   border-color: $gray_desertStorm;
+  
   .yen {
     font-size: $fontsize-l;
   }
@@ -46,25 +48,20 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    border: 1px solid $gray_desertStorm;
+    
     border-color: $gray_desertStorm;
     padding:20px;
     margin-bottom: -2px;
     font-size:$fontsize-s;
+    :nth-child(odd){
+      border: 1px solid $gray_desertStorm;
+    }
+    :nth-child(even){
+      border: 5px solid $orange_bistre;
+    }
   }
 
 }
-.plan-b{
-  border: 1px solid $orange_bistre;
-}
-.text-b {
-  color: $white;
-  padding: 20px 40px;
-  background-color: $orange_bistre;
-  text-align: center;
-  border: 1px solid;
-  border-color: $gray_desertStorm;
-  font-size:$fontsize-l;
-}
+
 
 }
