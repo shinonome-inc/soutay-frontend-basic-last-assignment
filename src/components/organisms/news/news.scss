@@ -9,19 +9,6 @@
   @media (min-width: $breakpoint-md) {
     margin-bottom: 0;
   }
-  .news-title {
-    font-family: $fontfamily-mincho;
-    font-size:$fontsize-xxl;
-    margin-bottom:32px;
-    @media (min-width: $breakpoint-md) {
-      font-size: $fontsize-l;
-    }
-  }
-  .caption {
-    font-size: $fontsize-m;
-    margin: 16px;
-
-  }
   
 
   .news-list {
@@ -39,12 +26,6 @@
         display: flex;
         text-decoration: none;
 
-        .news-thumbnail {
-          display: none;
-          width: 207px;
-          overflow: hidden;
-        }
-
         .news-caption {
           width: 100%;
           background-color: $white;
@@ -53,6 +34,7 @@
           flex-direction: column;
           align-items: flex-start;
           justify-content: center;
+          padding:20px;
           
           & > h3 {
             color: $black;
@@ -60,18 +42,14 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            margin-bottom: 8px;
             width: 100%;
-            padding:5px 0px 20px 20px;
-            
+            margin:0;
           }
 
           .time {
             color: $gray_nobel;
             font-size: $fontsize-xs;
             margin-bottom: 10px;
-            padding:20px 0px 5px 20px;
-
           }
         }
 
@@ -81,23 +59,9 @@
           }
         }
       }
-
       &:not(:first-child) > a .news-caption {
         border-top: none;
       }
-    }
-  }
-  .news-more {
-    color: $black;
-    text-decoration: none;
-    text-align: right;
-    font-size:$fontsize-s;
-    margin-top:30px;
-    .yajirusi{
-      margin-left:16px;
-    }
-    &:hover{
-      color:$gray_nobel;
     }
   }
 }
