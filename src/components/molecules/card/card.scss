@@ -39,17 +39,16 @@
   .below {
     background-color: $white_smoke;
     padding: 32px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .text {
+      margin-right: auto;
       margin-bottom: 30px;
       font-weight: 400;
       line-height: 33px;
       font-size: $fontsize-s;
-    }
-    .button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
   }
 }
