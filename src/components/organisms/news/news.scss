@@ -52,12 +52,6 @@
             margin-bottom: 10px;
           }
         }
-
-        @media (min-width: $breakpoint-md) {
-          .news-caption {
-            width: calc(100% - 207px);
-          }
-        }
       }
       &:not(:first-child) > a .news-caption {
         border-top: none;
