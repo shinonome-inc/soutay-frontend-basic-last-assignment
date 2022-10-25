@@ -44,12 +44,17 @@
             text-overflow: ellipsis;
             width: 100%;
             margin:0;
+            line-height: 23px;
+            &:hover{
+              color: $orange_bistre;
+            }
           }
 
           .time {
             color: $gray_nobel;
             font-size: $fontsize-xs;
             margin-bottom: 10px;
+            line-height: 12px;
           }
         }
       }
