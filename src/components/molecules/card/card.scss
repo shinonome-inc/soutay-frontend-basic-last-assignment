@@ -1,0 +1,52 @@
+@use "../../variables" as *;
+
+.card {
+  object-fit: contain;
+  border: none;
+
+  .on {
+    overflow: hidden;
+    img {
+      position: relative;
+      width: 100%;
+      @media (min-width: $breakpoint-md) {
+        transition: 0.5s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  .white {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 150px 150px 0 0;
+    border-color: $white transparent transparent transparent;
+  }
+
+  .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $orange_bistre;
+    font-size: $fontsize-l;
+    margin-left: 6px;
+    font-weight: 700;
+  }
+  .below {
+    background-color: $white_smoke;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .text {
+      margin-right: auto;
+      margin-bottom: 30px;
+      line-height: 33px;
+      font-size: $fontsize-s;
+    }
+  }
+}
