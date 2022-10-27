@@ -1,0 +1,68 @@
+@use "../../variables" as *;
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 35px;
+
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: 0;
+  }
+  
+
+  .news-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 14px;
+
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: 30px;
+    }
+
+    .news-card {
+      & > a {
+        display: flex;
+        text-decoration: none;
+
+        .news-caption {
+          width: 100%;
+          background-color: $white;
+          border: 1px solid $gray_gainsboro;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          padding:20px;
+          
+          & > h3 {
+            color: $black;
+            font-size: $fontsize-m;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 100%;
+            margin:0;
+            line-height: 23px;
+            &:hover{
+              color: $orange_bistre;
+            }
+          }
+        }
+      }
+      &:not(:first-child) > a .news-caption {
+        border-top: none;
+      }
+    }
+  }
+  .news-and-events-more{
+    margin: 0;
+  }
+  time{
+    line-height: 12px;
+    color: $gray_nobel;
+    font-size: $fontsize-xs;
+    margin-bottom: 10px;
+  }
+}
