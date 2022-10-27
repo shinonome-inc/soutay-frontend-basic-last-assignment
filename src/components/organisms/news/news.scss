@@ -49,13 +49,6 @@
               color: $orange_bistre;
             }
           }
-
-          .time {
-            color: $gray_nobel;
-            font-size: $fontsize-xs;
-            margin-bottom: 10px;
-            line-height: 12px;
-          }
         }
       }
       &:not(:first-child) > a .news-caption {
@@ -68,5 +61,8 @@
   }
   time{
     line-height: 12px;
+    color: $gray_nobel;
+    font-size: $fontsize-xs;
+    margin-bottom: 10px;
   }
 }
