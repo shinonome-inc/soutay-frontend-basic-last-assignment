@@ -1,67 +1,67 @@
 @use "../../variables" as *;
 
-.plan{
-.text {
-  color: $white;
-  padding: 20px 40px;
-  text-align: center;
-  border: 1px solid;
-  border-color: $gray_desertStorm;
-  font-size:$fontsize-l;
-  :nth-child(odd){
-    background-color: $orange_zorba;
-  }
-  :nth-child(even){
-    background-color: $orange_bistre;
-  }
-}
-.body {
-  background-color: $gray_desertStorm;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:24px;
-  border: solid;
-  border-color: $gray_desertStorm;
-  
-  .yen {
+.plan {
+  .text {
+    color: $white;
+    padding: 20px 40px;
+    text-align: center;
     font-size: $fontsize-l;
+    font-weight: 700;
   }
-  .price {
-    color: $orange_bistre;
-    font-size:$fontsize-xxl;
-    .memo {
-      display:flex;
-      color: $black;
-      font-weight: normal;
+  .body {
+    background-color: $gray_desertStorm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    border: 1px solid $gray_gainsboro;
+    .yen {
+      font-size: $fontsize-l;
+    }
+    .price {
+      color: $orange_bistre;
+      font-size: $fontsize-xxl;
+      .memo {
+        display: flex;
+        color: $black;
+        font-weight: normal;
+        font-size: $fontsize-s;
+        justify-content: center;
+      }
+    }
+  }
+  .list {
+    justify-content: center;
+    align-items: center;
+    text-decoration-color: $gray_desertStorm;
+    text-align: center;
+    .start {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $gray_gainsboro;
+      padding: 20px;
       font-size: $fontsize-s;
-      justify-content:center;
+      border-bottom: none;
+      margin: 0;
+      &:last-child {
+        border-bottom: 1px solid $gray_gainsboro;
+      }
     }
   }
-}
-.list {
-  justify-content: center;
-  align-items: center;
-  text-decoration-color: $gray_desertStorm;
-  text-align: center;
-  .start {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    
-    border-color: $gray_desertStorm;
-    padding:20px;
-    margin-bottom: -2px;
-    font-size:$fontsize-s;
-    :nth-child(odd){
-      border: 1px solid $gray_desertStorm;
-    }
-    :nth-child(even){
-      border: 5px solid $orange_bistre;
+  &:nth-child(odd) {
+    .text {
+      background-color: $orange_zorba;
     }
   }
-
-}
-
-
+  &:nth-child(even) {
+    .text {
+      background-color: $orange_bistre;
+      padding-top: 15px;
+    }
+    .list .start:last-child {
+      padding-bottom: 15px;
+    }
+    border: 5px solid $orange_bistre;
+  }
 }
